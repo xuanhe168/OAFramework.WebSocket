@@ -1,0 +1,6 @@
+C:\Users\MR.mingzhi\Desktop\OAFramework\Server\obj\Debug\WebSocket.csproj.CoreCompileInputs.cache
+C:\Users\MR.mingzhi\Desktop\OAFramework\Server\bin\Debug\OAFramework.WebSocket.dll.config
+C:\Users\MR.mingzhi\Desktop\OAFramework\Server\bin\Debug\OAFramework.WebSocket.dll
+C:\Users\MR.mingzhi\Desktop\OAFramework\Server\bin\Debug\OAFramework.WebSocket.pdb
+C:\Users\MR.mingzhi\Desktop\OAFramework\Server\obj\Debug\OAFramework.WebSocket.dll
+C:\Users\MR.mingzhi\Desktop\OAFramework\Server\obj\Debug\OAFramework.WebSocket.pdb

@@ -1,0 +1,11 @@
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\Tester.exe.config
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\Tester.exe
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\Tester.pdb
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\OAFramework.WebSocket.dll
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\OAFramework.WebSocket.pdb
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\OAFramework.WebSocket.dll.config
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\OAFramework.WebSocket.TestUnit.csprojAssemblyReference.cache
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\OAFramework.WebSocket.TestUnit.csproj.CoreCompileInputs.cache
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\OAFramework.WebSocket.TestUnit.csproj.CopyComplete
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\Tester.exe
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\Tester.pdb

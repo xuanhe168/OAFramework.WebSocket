@@ -1,0 +1,7 @@
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\bin\Debug\OAFramework.WebSocket.dll.config
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\bin\Debug\OAFramework.WebSocket.dll
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\bin\Debug\OAFramework.WebSocket.pdb
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.csprojAssemblyReference.cache
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.csproj.CoreCompileInputs.cache
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.dll
+F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.pdb
