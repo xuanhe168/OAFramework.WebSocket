@@ -1,0 +1,5 @@
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\bin\Release\OAFramework.WebSocket.dll
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\bin\Release\OAFramework.WebSocket.pdb
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\obj\Release\OAFramework.WebSocket.csproj.CoreCompileInputs.cache
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\obj\Release\OAFramework.WebSocket.dll
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\obj\Release\OAFramework.WebSocket.pdb

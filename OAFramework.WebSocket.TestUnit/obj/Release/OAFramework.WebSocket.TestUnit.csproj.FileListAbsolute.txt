@@ -1,0 +1,10 @@
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Release\Tester.exe.config
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Release\Tester.exe
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Release\Tester.pdb
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Release\OAFramework.WebSocket.dll
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Release\OAFramework.WebSocket.pdb
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Release\OAFramework.WebSocket.TestUnit.csprojAssemblyReference.cache
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Release\OAFramework.WebSocket.TestUnit.csproj.CoreCompileInputs.cache
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Release\OAFramework.WebSocket.TestUnit.csproj.CopyComplete
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Release\Tester.exe
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Release\Tester.pdb

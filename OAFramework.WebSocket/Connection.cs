@@ -94,7 +94,7 @@ namespace OAFramework.WebSocket
                 }
             }catch(Exception ex)
             {
-                logger.d(ex.ToString());
+                logger.Write(ex.ToString());
                 if (Disconnected != null)Disconnected(this);
             }
         }
@@ -168,7 +168,7 @@ namespace OAFramework.WebSocket
                 string acceptKey = string.Empty;
                 foreach (var line in rawClientHandshakeLines)
                 {
-                    Console.WriteLine(line);
+                    //Console.WriteLine(line);
                     if (line.Contains("Sec-WebSocket-Key:")) acceptKey = ComputeWebSocketHandshakeSecurityHash09(line.Substring(line.IndexOf(":") + 2));
                 }
                 New_Handshake = string.Format(New_Handshake, acceptKey);
@@ -181,7 +181,7 @@ namespace OAFramework.WebSocket
             // Welcome the new client
             foreach (var line in ClientHandshakeLines)
             {
-                logger.d(line);
+                //logger.d(line);
                 if (line.Contains("Sec-WebSocket-Key1:")) BuildServerPartialKey(1, line.Substring(line.IndexOf(":") + 2));
                 if (line.Contains("Sec-WebSocket-Key2:")) BuildServerPartialKey(2, line.Substring(line.IndexOf(":") + 2));
                 if (line.Contains("Origin:"))
@@ -202,9 +202,9 @@ namespace OAFramework.WebSocket
             byte[] serverKey = BuildServerFullKey(last8Bytes);
             Array.Copy(HandshakeText, serverHandshakeResponse, HandshakeText.Length);
             Array.Copy(serverKey, 0, serverHandshakeResponse, HandshakeText.Length, 16);
-            logger.d("Send handshake message...");
+            //logger.d("Send handshake message...");
             Socket.BeginSend(serverHandshakeResponse, 0, HandshakeText.Length + 16, 0, HandshakeFinished, null);
-            logger.d(Handshake);
+            //logger.d(Handshake);
         }
         private static String ComputeWebSocketHandshakeSecurityHash09(String secWebSocketKey)
         {
@@ -225,7 +225,6 @@ namespace OAFramework.WebSocket
             Socket.BeginReceive(receivedDataBuffer, 0, receivedDataBuffer.Length, 0, new AsyncCallback(Read), null);
             if (Connected != null)Connected(this);
         }
-
         public void Dispose()
         {
             if(Socket != null)

@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace OAFramework.WebSocket
 {
@@ -14,6 +15,7 @@ namespace OAFramework.WebSocket
         Socket Listener;
         int ConnectionQueueLength;
         int MaxBufferSize;
+        bool Running;
         Logger logger;
         byte[] FirstByte;
         byte[] LastByte;
@@ -44,6 +46,7 @@ namespace OAFramework.WebSocket
         {
             if (!AlreadyDisposed)
             {
+                Running = false;
                 AlreadyDisposed = true;
                 if (Listener != null) Listener.Close();
                 foreach (var item in SocketList)item.Dispose();
@@ -51,27 +54,29 @@ namespace OAFramework.WebSocket
                 GC.SuppressFinalize(this);
             }
         }
-        public void Start()
+        public Task Start()
         {
+            Running = true;
             Listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
             Listener.Bind(LocalEndPoint);
             Listener.Listen(ConnectionQueueLength);
-            logger.d(string.Format("WebSocket Launched ws://{0}/chat",LocalEndPoint.ToString()));
-            while (true)
+            return new Task(() =>
             {
-                Socket NewSock = Listener.Accept();
-                if(NewSock != null)
+                while (Running)
                 {
-                    Thread.Sleep(100);
-                    Connection connection = new Connection(NewSock);
-                    connection.Connected += new ConnectedEventHandler(Socket_NewConnected);
-                    connection.Received +=  new ReceivedEventHandler(Socket_DataReceived);
-                    connection.Disconnected += new DisconnectedEventHandler(Socket_Disconnected);
-                    SocketList.Add(connection);
+                    Socket NewSock = Listener.Accept();
+                    if (NewSock != null)
+                    {
+                        Thread.Sleep(100);
+                        Connection connection = new Connection(NewSock);
+                        connection.Connected += new ConnectedEventHandler(Socket_NewConnected);
+                        connection.Received += new ReceivedEventHandler(Socket_DataReceived);
+                        connection.Disconnected += new DisconnectedEventHandler(Socket_Disconnected);
+                        SocketList.Add(connection);
+                    }
                 }
-            }
+            });
         }
-
         public void Send(string message)
         {
             for(var i = 0;i < SocketList.Count; i++)
@@ -81,13 +86,11 @@ namespace OAFramework.WebSocket
                 item.Send(message);
             }
         }
-
         public void Send(string username,string message)
         {
             Connection connection = SocketList.Find(what => what.Name == username);
             if (connection != null && connection.Socket.Connected)connection.Send(message);
         }
-
         public void SendInvalidMsg(string cmd,Connection connection)
         {
             cmd = string.Format("The command invalid \'{0}\'.",cmd);
@@ -107,10 +110,9 @@ namespace OAFramework.WebSocket
             }
             catch (Exception e)
             {
-                logger.d(e.ToString());
+                logger.Write(e.ToString());
             }
         }
-
         private void Handshake(Connection connection)
         {
             if (connection.Socket.Connected)
@@ -131,11 +133,10 @@ namespace OAFramework.WebSocket
                 }
                 catch (Exception e)
                 {
-                    logger.d(e.ToString());
+                    logger.Write(e.ToString());
                 }
             }
         }
-
         private void Socket_Disconnected(Connection connection)
         {
             if(connection != null)
@@ -145,7 +146,6 @@ namespace OAFramework.WebSocket
                 if(Disconnected != null)Disconnected(connection);
             }
         }
-
         private void Socket_DataReceived(string message, Connection connection)
         {
             string[] args = message.Split(' ');
@@ -182,7 +182,6 @@ namespace OAFramework.WebSocket
                 }
             }
         }
-
         private void Socket_NewConnected(Connection connection)
         {
             if (Connected != null)Connected(connection);

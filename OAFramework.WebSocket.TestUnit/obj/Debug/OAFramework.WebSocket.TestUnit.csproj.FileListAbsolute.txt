@@ -9,3 +9,13 @@ F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUn
 F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\OAFramework.WebSocket.TestUnit.csproj.CopyComplete
 F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\Tester.exe
 F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\Tester.pdb
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\Tester.exe.config
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\Tester.exe
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\Tester.pdb
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\OAFramework.WebSocket.dll
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\bin\Debug\OAFramework.WebSocket.pdb
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\OAFramework.WebSocket.TestUnit.csprojAssemblyReference.cache
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\OAFramework.WebSocket.TestUnit.csproj.CoreCompileInputs.cache
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\OAFramework.WebSocket.TestUnit.csproj.CopyComplete
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\Tester.exe
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket.TestUnit\obj\Debug\Tester.pdb

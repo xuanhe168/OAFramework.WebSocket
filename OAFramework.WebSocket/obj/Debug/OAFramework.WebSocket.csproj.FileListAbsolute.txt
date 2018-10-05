@@ -5,3 +5,8 @@ F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\obj\De
 F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.csproj.CoreCompileInputs.cache
 F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.dll
 F:\CODE COLLECTION\C#\Modules\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.pdb
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\bin\Debug\OAFramework.WebSocket.dll
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\bin\Debug\OAFramework.WebSocket.pdb
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.csproj.CoreCompileInputs.cache
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.dll
+D:\githubRepos\OAFramework.WebSocket\OAFramework.WebSocket\obj\Debug\OAFramework.WebSocket.pdb

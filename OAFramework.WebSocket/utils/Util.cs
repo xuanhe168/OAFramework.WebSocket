@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -16,6 +17,11 @@ namespace OAFramework.WebSocket.utils
             var hostEntry = Dns.GetHostEntry(hostName);
             foreach (var x in hostEntry.AddressList) if (x.AddressFamily.Equals(AddressFamily.InterNetwork)) return x;
             return hostEntry.AddressList[0];
+        }
+
+        public static string GetConfig(string key)
+        {
+            return ConfigurationManager.AppSettings[key];
         }
     }
 }

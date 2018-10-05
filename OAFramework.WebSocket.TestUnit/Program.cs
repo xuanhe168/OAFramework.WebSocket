@@ -1,5 +1,6 @@
 ﻿using OAFramework.WebSocket.utils;
 using System;
+using System.Threading.Tasks;
 
 namespace OAFramework.WebSocket.TestUnit
 {
@@ -7,31 +8,34 @@ namespace OAFramework.WebSocket.TestUnit
     {
         static void Main(string[] args)
         {
-            Console.Title = "OAFramework.WebSocket";
+            var endPoint = new System.Net.IPEndPoint(Util.GetIPV4(), int.Parse(Util.GetConfig("port")));
+            var PreMessage = string.Format($"WebSocket Launched ws://{endPoint}/chat");
             WebSocket sock = new WebSocket();
-            var ipep = new System.Net.IPEndPoint(Util.GetIPV4(), 1106);
-            sock.Bind(ipep);
+            Console.Title = PreMessage;
+            sock.Bind(endPoint);
             sock.Connected += WebSocket_Connected;
             sock.Received += WebSocket_Received;
             sock.Disconnected += WebSocket_Disconnected;
-            sock.Start();
+            Task t1 = sock.Start();
+            t1.Start();
+            Console.WriteLine(PreMessage);
+            t1.Wait();
         }
 
         private static void WebSocket_Disconnected(Connection connection)
         {
-            Console.WriteLine("已下线\'{0}\'.", connection.Name);
+            Console.WriteLine($"Disconnect \'{connection.Name}\'.");
         }
 
         private static void WebSocket_Received(string message, Connection connection)
         {
-            Console.WriteLine("新消息:{1}.", connection.Name, message);
-            connection.Send("You Enter: " + message);
+            Console.WriteLine($"New message \'{message}\' from {connection.Name}.");
+            connection.Send($"You Enter: {message}");
         }
 
         private static void WebSocket_Connected(Connection connection)
         {
-            Console.WriteLine("新的连接:{0}", connection.Socket.RemoteEndPoint.ToString());
-            connection.Send("Hello,Boy!");
+            Console.WriteLine($"New connection {connection.Socket.RemoteEndPoint}");
         }
     }
 }
