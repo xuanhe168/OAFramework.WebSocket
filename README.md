@@ -4,7 +4,7 @@ A WebSocket framework of the .NET C#
 
 # demo
 ```
-tatic void Main(string[] args)
+static void Main(string[] args)
         {
             var endPoint = new System.Net.IPEndPoint(Util.GetIPV4(), int.Parse(Util.GetConfig("port")));
             var PreMessage = string.Format($"WebSocket Launched ws://{endPoint}/chat");
